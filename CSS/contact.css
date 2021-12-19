@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+	font-family: Lemonmilk;
+	src: url(fonts/lemonmilk.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+@font-face {
+	font-family: Lemonmilk;
+	src: url(fonts/lemonmilk.otf);
+}
+
+/*Main body properties begin*/
+/*Header Begins. This includes the slideshow style attributes and main hdeader container container properties.*/
+.header {
+	background: url(../images/background.png);
+	padding-bottom: 10px;
+	min-height: 300px;
+	display: flex;
+	max-width: 100%;
+}
+
+.split {
+	width: 50%;
+	text-align: center;
+	padding: 30px;
+	padding-top: 120px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.split {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+}
+
+.header .split h3 {
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 2rem;
+	padding-bottom: 15px;
+	font-weight: 500;
+		font-family: 'Poppins', sans-serif;
+}
+
+.header .split p {
+	text-align: left;
+	line-height: 1.5;
+	margin: 2rem;
+	margin-top: 5%;
+	color: #FFFFFF;
+	font-size: 1.05vw;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (max-width: 1600px) {
+	.header .split p {
+		font-size: 16px;
+	}
+}
+
+/*Slideshow properties begin here*/
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	height: 0.5rem;
+	width: 2rem;
+	margin: 0 2px;
+	background-color: #bbb;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active2 {
+	background-color: #717171;
+}
+
+/* The following code is for the animations that are achieved throuhg giving the animation a "class/webkit name" and then using CSS keyframes for the code*/
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: .5s;
+	animation-name: fade;
+	animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+/*Animations end here*/
+/*Media query to decrease text size begins here*/
+@media only screen and (max-width: 300px) {
+	.text {
+		font-size: 11px
+	}
+}
+
+/*Media query ends here*/
+/*Slideshow properties end here*/
+
+/*Header properties end here*/
+
+/*Contact form begins*/
+/*The following properties are for the entire form section of the page*/
+.main-box-contact {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 450;
+}
+
+section {
+	padding-left: 25vw;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	position: relative;
+	min-height: 100px;
+	background: #112d42;
+}
+
+section .container {
+	position: relative;
+	width: 50vw;
+	min-height: 900px;
+	display: flex;
+	z-index: 1000;
+}
+
+@media only screen and (max-width: 1000px) {
+	section {
+		padding: 0;
+		height: 1200px;
+		width: 100%;
+
+	}
+
+	section .container {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1520px) {
+	section .container {
+		width: 70vw;
+	}
+
+	section {
+		padding-left: 15vw;
+	}
+}
+
+/*Actual form content properties begin*/
+section .container .contactForm {
+	align-items: center;
+	position: absolute;
+	padding: 70px;
+	background: #fcfcfc;
+	width: 100%;
+	box-shadow: 0 50px 50px rgba(0, 0, 0, .5);
+}
+
+section .container .contactForm h2 {
+	color: #0f3959;
+	padding-bottom: 20px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+section .container .contactForm .formBox {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 25px;
+}
+
+/*Text input BOX properties begin*/
+section .container .contactForm .inputBox {
+	position: relative;
+	margin: 0 0 35px 0;
+}
+
+section .container .contactForm .inputBox.w50 {
+	width: 40%;
+}
+
+section .container .contactForm .inputBox.w100 {
+	width: 100%;
+}
+
+section .container .contactForm .inputBox input {
+	width: 100%;
+	background-color: #fcfcfc;
+	padding: 8px 0 5px 0;
+	font-size: 17px;
+	font-weight: 400;
+	resize: none;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+}
+
+#email_input {
+	padding-top: 10px;
+}
+
+section .container .contactForm .inputBox textarea {
+	width: 100%;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 400;
+	background: #fcfcfc;
+	color: #333;
+	border: none;
+	resize: none;
+	border-bottom: 1px solid black;
+	outline: none;
+}
+
+section .container .contactForm .inputBox textarea {
+	min-height: 110px;
+}
+
+.review {
+	padding-top: 30px;
+}
+
+/*Input BOX properties end*/
+
+/*The following proeprties are for the TEXT input LABELS*/
+section .container .contactForm .inputBox label {
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	color: black;
+	transition: .4s
+}
+
+/*Text input label properties end*/
+
+
+/*The following table properties are for the radio, dropdown, checkbox, button form elements that are placed into tables for ease of formatting.*/
+table {
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+td {
+	width: 60%;
+	padding-bottom: 15px;
+}
+
+/*Radio, dropdown, checkbox, button properties end*/
+
+
+/*Input Animation begins*/
+/*The following code achieves an animation like effect when the input areas are clicked on. Given to the input class is the vocus state, as well as the valid state, ensuring that if given a valid input or clicked on, the following properties are given to the labels. Given these states, the label will translate up, change color and become smaller. The code is repeated for the <textarea> inputs as well.*/
+section .container .contactForm .inputBox input:focus ~ label,
+section .container .contactForm .inputBox input:valid ~ label {
+	transform: translateY(-20px);
+	font-size: 14px;
+	font-weight: 600;
+	color: #009090;
+}
+
+section .container .contactForm .inputBox textarea:focus ~ label,
+section .container .contactForm .inputBox textarea:valid ~ label{
+	transform: translateY(-20px);
+	font-size: 14px;
+	font-weight: 600;
+	color: #009090;
+}
+
+/*Input Animation ends*/
+
+/*Properties for the submit button are given below*/
+section div button {
+	position: relative;
+	cursor: pointer;
+	background: #009090;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	transition: all .4s;
+	padding: 5px 0px;
+	font-size: 18px;
+	font-weight: 400;
+	resize: none;
+	border: none;
+	outline: none;
+	width: 10rem !important;
+}
+
+section div button:hover {
+	background: #24252a;
+}
+
+
+@media only screen and (max-width: 300px) {
+	.text {
+		font-size: 11px
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.formBox {
+		display: flex !important;
+		justify-content: space-between !important;
+		flex-wrap: wrap !important;
+		flex-direction: column !important;
+	}
+}
+
+/*Button properties end*/
+/*Form properties end*/
+/*Form container properties end*/
+
+
+
+/*The following properties are for the FAQ section of the page. The attributes create the style for the accordion button and body.*/
+.faq {
+	padding: 10vh 20vw;
+}
+
+.faq h1,
+.faq h3 {
+	font-weight: 500;
+}
+
+.faq h1 {
+	text-align: center;
+}
+
+.faq h3 {
+	padding: 30px 0;
+}
+
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition: 0.4s;
+}
+
+/*The following property sets the hover state of the accordion button*/
+.active2,
+.accordion:hover {
+	background-color: #ccc;
+}
+
+/*Accordion button hover state ends*/
+
+
+/*The ::after selector inserts the "+" symbol after the content of the "accordion" class which contains the title. It's been given a float right so that it always remain on the right*/
+.accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+}
+
+.active2:after {
+	content: "\2212";
+}
+
+/*.active properties end*/
+
+/*The following properties are for the class of "panel" that contains the answer to the questions*/
+
+.panel {
+	margin: .5vw;
+	padding: 0 20px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+	font-size: 16px;
+}
+
+/*Panel properties end*/
+/*Accordion Properties end*/
+/*Main body elements end*/

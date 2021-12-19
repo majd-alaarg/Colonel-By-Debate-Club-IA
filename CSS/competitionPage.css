@@ -1,0 +1,482 @@
+/*EVENTS*/
+.eventContainer {
+	padding: 5vh 8vw;
+	background: #f5f5f5;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+
+.eventContent {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+}
+
+.eventSplit {
+	position: relative;
+	width: 40vw;
+	padding: 5vh 2.5vw;
+	background: white;
+	overflow: hidden;
+	margin-bottom: 5vh;
+}
+
+@media (max-width: 700px) {
+	.eventContainer {
+		padding: 10vh 0 5vh 0vw;
+		background: #eaeaea;
+	}
+
+	.eventContent {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.eventSplit {
+		position: relative;
+		width: 80%;
+		padding: 5vh 2.5vw;
+		background: white;
+		overflow: hidden;
+		margin-bottom: 5vh;
+	}
+
+}
+
+#placeHolder {
+	height: 90px;
+}
+
+
+
+
+/*CSS*/
+/* :: 1.0 Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:700,800");
+/* :: 2.0 Import All CSS */
+@import url(cuscss.min.css);
+@import url(classy-nav.css);
+@import url(slidingAnimation.css);
+/* @import url(css/animate.css); */
+@import url(magnific-popup.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+/* :: 3.0 Base CSS */
+
+.eventContainer h2,
+.eventContainer h6 {
+	color: #1f1f2c;
+	line-height: 1.3;
+	font-weight: 700;
+}
+
+.eventContainer p {
+	color: #292929;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: 500;
+}
+
+.eventContainer a,
+.eventContainer a:hover,
+.eventContainer a:focus {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	text-decoration: none;
+	outline: 0 solid transparent;
+	color: #1f1f2c;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.eventContainer ul,
+.eventContainer ol {
+	margin: 0;
+}
+
+.eventContainer ul li,
+.eventContainer ol li {
+	list-style: none;
+}
+
+.eventContainer img {
+	height: auto;
+	max-width: 100%;
+}
+
+.mt-30 {
+	margin-top: 30px !important;
+}
+
+
+/* :: 3.3.0 Section Padding */
+.section-padding-100 {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+/* :: 6.0 About Us Area CSS */
+.about-us-area {
+	position: relative;
+	z-index: 1;
+}
+
+.about-us-area .about-thumbnail {
+	border-radius: 5px;
+	box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+	margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.about-us-area .about-thumbnail {
+		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.about-us-area .about-thumbnail {
+		margin-top: 100px;
+	}
+}
+
+.about-us-area .about-thumbnail img {
+	border-radius: 5px;
+}
+
+.about-us-content {
+	position: relative;
+	z-index: 1;
+}
+
+.about-us-content img {
+	border-radius: 5px;
+	box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+	margin-bottom: 30px;
+}
+
+.about-us-content img img {
+	border-radius: 5px;
+}
+
+
+.about-us-content .about-text a {
+	font-weight: 700;
+	color: #959595;
+}
+
+.about-us-content .about-text a i {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+}
+
+.about-us-content .about-text a:hover,
+.about-us-content .about-text a:focus {
+	color: #fc8403;
+}
+
+.about-us-content .about-text a:hover i,
+.about-us-content .about-text a:focus i {
+	padding-left: 5px;
+}
+
+
+.about-page {
+	position: relative;
+	z-index: 1;
+}
+
+.about-page h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.about-page h2 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.about-page h2 {
+		font-size: 24px;
+	}
+}
+
+.about-page .opening-hours-location {
+	position: relative;
+	z-index: 1;
+}
+
+.about-page .opening-hours-location .opening-hours {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	width: 50%;
+	border-right: 1px solid #ebebeb;
+	padding-right: 30px;
+}
+
+.about-page .opening-hours-location .opening-hours p {
+	margin-bottom: 0;
+}
+
+.about-page .opening-hours-location .location {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	width: 100%;
+	/* padding-left: 50px; */
+}
+
+.about-page .opening-hours-location .location p {
+	margin-bottom: 0;
+}
+
+.eventContainer h6 {
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit
+}
+
+.eventContainer .h6,
+.eventContainer h6 {
+	font-size: 1rem
+}
+
+.eventContainer .container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+@media (min-width:576px) {
+	.eventContainer .container {
+		max-width: 540px
+	}
+}
+
+@media (min-width:768px) {
+	.eventContainer .container {
+		max-width: 720px
+	}
+}
+
+@media (min-width:992px) {
+	.eventContainer .container {
+		max-width: 960px
+	}
+}
+
+@media (min-width:1200px) {
+	.eventContainer .container {
+		max-width: 1140px
+	}
+}
+
+.eventContainer .row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+
+.col-12,
+.col-lg-5,
+.col-lg-6 {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px
+}
+
+
+
+@media (min-width:992px) {
+	.col-lg-5 {
+		-ms-flex: 0 0 41.666667%;
+		flex: 0 0 41.666667%;
+		max-width: 41.666667%
+	}
+
+	.col-lg-6 {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%
+	}
+}
+
+.d-flex {
+	display: -ms-flexbox !important;
+	display: flex !important
+}
+
+
+.justify-content-between {
+	-ms-flex-pack: justify !important;
+	justify-content: space-between !important
+}
+
+
+.align-items-center {
+	-ms-flex-align: center !important;
+	align-items: center !important
+}
+
+
+/* :: 16.0 Breadcumb Area CSS */
+.breadcrumb {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: .75rem 1rem;
+	margin-bottom: 1rem;
+	list-style: none;
+	background-color: #e9ecef;
+	border-radius: .25rem
+}
+
+.breadcrumb-item + .breadcrumb-item {
+	padding-left: .5rem
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+	display: inline-block;
+	padding-right: .5rem;
+	color: #6c757d;
+	content: "/"
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+	text-decoration: underline
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+	text-decoration: none
+}
+
+.breadcrumb-item.active {
+	color: #6c757d
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px
+}
+
+/* :: 16.0 Breadcumb Area CSS */
+.breadcrumb-area {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+}
+
+.breadcrumb-area .breadcrumb {
+	margin: 0;
+	padding: 0;
+	padding-top: 30px;
+	background-color: transparent;
+}
+
+.breadcrumb-area .breadcrumb .breadcrumb-item {
+	font-size: 15px;
+	color: #707070;
+	font-weight: 600;
+}
+
+.breadcrumb-area .breadcrumb .breadcrumb-item a {
+	font-size: 15px;
+	color: #1f1f2c;
+	font-weight: 700;
+}
+
+.breadcrumb-area .breadcrumb .breadcrumb-item a:hover,
+.breadcrumb-area .breadcrumb .breadcrumb-item a:focus {
+	color: #d42145;
+}
+
+.breadcrumb-area .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+	color: #1f1f2c;
+	font-family: "FontAwesome";
+	content: "\f105";
+}
+
+.eventDescription br {
+	display: block;
+	margin: 18px 0;
+	content: " ";
+}

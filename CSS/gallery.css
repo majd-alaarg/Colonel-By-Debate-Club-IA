@@ -1,0 +1,137 @@
+.main {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	margin: 1000;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: white;
+	margin-top: 140px;
+}
+
+.main h1 {
+	position: relative;
+	height: auto;
+	width: 500px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 5% 0 2% 0;
+	text-align: center;
+	font: 2.8em;
+	font-weight: 650;
+	letter-spacing: 1.5px;
+	color: black;
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+	background: rgba(0, 0, 0, 0.05)
+}
+
+.main {
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+}
+
+.main p {
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.8em;
+	letter-spacing: 1px;
+	color: black;
+
+}
+
+.main .gallery {
+	position: relative;
+	height: auto;
+	width: 85%;
+	margin: auto;
+	padding: 45px 0;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 2vmin;
+	grid-auto-flow: dense;
+
+}
+
+.main .gallery .img {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+
+}
+
+.main .gallery .img {
+	cursor: pointer;
+}
+
+.main .gallery .img:first-child {
+	grid-column-start: span 2;
+	grid-row-start: span 3;
+
+}
+
+.main .gallery .img:nth-child(2n+3) {
+	grid-row-start: span 3;
+
+}
+
+.main .gallery .img:nth-child(4n+5) {
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+
+.main .gallery .img:nth-child(6n+7) {
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+
+.main .gallery .img:nth-child(8n+9) {
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.main .gallery .img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: 0.4s;
+
+}
+
+.main .gallery .img {
+	transition: 0.4s;
+}
+
+.main .gallery .img:hover img {
+	filter: grayscale(0)
+}
+
+
+.gallery:hover .img img {
+	filter: grayscale(1);
+
+}
+
+.img:hover .img {
+	filter: grayscale(0);
+}
+
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
+}
