@@ -415,7 +415,6 @@ section div button:hover {
 .active2:after {
 	content: "\2212";
 }
-
 /*.active properties end*/
 
 /*The following properties are for the class of "panel" that contains the answer to the questions*/
