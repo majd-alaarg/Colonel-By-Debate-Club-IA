@@ -115,7 +115,6 @@
 
 .gallery:hover .img img {
 	filter: grayscale(1);
-
 }
 
 .img:hover .img {
