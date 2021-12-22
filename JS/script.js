@@ -119,48 +119,48 @@ function showSlides() {
 //CONTACT FORM SUBMISSION SCRIPT BEGINS
 function contactForm2() {
 
-			userName = String(document.getElementById("name").value);
-			userEmail = String(document.getElementById("email").value);
-			userAddress = String(document.getElementById("address").value);
-			userEmail = String(document.getElementById("email").value);
-			userCity = String(document.getElementById("city").value);
-			userYesStudent = String(document.getElementById("yes").value);
-			userNoStudent = String(document.getElementById("no").value);
-			userMessage = String(document.getElementById("review").value);
-			// Validation
-			if (userName == "") {
-				alert("Please enter your name.");
-			} else if (userEmail == "") {
-				alert("Please enter your email so we can get back to you!");
-			} else if (userAddress == "") {
-				alert("Please enter your address so we can help you!");
-			} else if (userCity == "") {
-				alert("Please enter your city so we can help you!");
-			} else if (document.getElementById("yes").checked === false && document.getElementById("no").checked === false) {
-				alert("Please indicate whether or not you are a Colonel By Student");
-			} else if (userMessage == "") {
-				alert("Please enter a message so we can help you!");
-			} else {
-				const scriptURL = 'https://script.google.com/macros/s/AKfycbz02WYMTa1p8EP8_sLZQFDrcImn5RtihKdz-SZB3PLe9vChxgoTjx6KKg2LsrhmJag7QA/exec'
-				const form = document.forms['contact-submit-to-google-sheet']
+	userName = String(document.getElementById("name").value);
+	userEmail = String(document.getElementById("email").value);
+	userAddress = String(document.getElementById("address").value);
+	userEmail = String(document.getElementById("email").value);
+	userCity = String(document.getElementById("city").value);
+	userYesStudent = String(document.getElementById("yes").value);
+	userNoStudent = String(document.getElementById("no").value);
+	userMessage = String(document.getElementById("review").value);
+	// Validation
+	if (userName == "") {
+		alert("Please enter your name.");
+	} else if (userEmail == "") {
+		alert("Please enter your email so we can get back to you!");
+	} else if (userAddress == "") {
+		alert("Please enter your address so we can help you!");
+	} else if (userCity == "") {
+		alert("Please enter your city so we can help you!");
+	} else if (document.getElementById("yes").checked === false && document.getElementById("no").checked === false) {
+		alert("Please indicate whether or not you are a Colonel By Student");
+	} else if (userMessage == "") {
+		alert("Please enter a message so we can help you!");
+	} else {
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbz02WYMTa1p8EP8_sLZQFDrcImn5RtihKdz-SZB3PLe9vChxgoTjx6KKg2LsrhmJag7QA/exec'
+		const form = document.forms['contact-submit-to-google-sheet']
 
-				form.addEventListener('submit', e => {
-					e.preventDefault()
-					fetch(scriptURL, {
-							method: 'POST',
-							body: new FormData(form)
-						})
-						.then(response => console.log('Success!', response))
-						.catch(error => console.error('Error!', error.message))
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, {
+					method: 'POST',
+					body: new FormData(form)
 				})
+				.then(response => console.log('Success!', response))
+				.catch(error => console.error('Error!', error.message))
+		})
 
-				alert("Thank you for contact the Colonel By Debate Club. You'll hear from us shortly!");
+		alert("Thank you for contact the Colonel By Debate Club. You'll hear from us shortly!");
 
-				setTimeout(pageReload, 700);
+		setTimeout(pageReload, 700);
 
-				function pageReload() {
-					location.reload();
-				}
-			}
+		function pageReload() {
+			location.reload();
 		}
+	}
+}
 //CONTACT FORM SUBMISSION SCRIPT ENDS
