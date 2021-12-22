@@ -116,7 +116,7 @@ function showSlides() {
 //Slideshow function ends here
 
 
-//CONTACT FORM SUBMISSION SCRIPT
+//CONTACT FORM SUBMISSION SCRIPT BEGINS
 function contactForm2() {
 
 			userName = String(document.getElementById("name").value);
