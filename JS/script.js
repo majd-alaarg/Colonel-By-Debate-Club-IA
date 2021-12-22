@@ -118,7 +118,6 @@ function showSlides() {
 
 //CONTACT FORM SUBMISSION SCRIPT BEGINS
 function contactForm2() {
-
 	userName = String(document.getElementById("name").value);
 	userEmail = String(document.getElementById("email").value);
 	userAddress = String(document.getElementById("address").value);
