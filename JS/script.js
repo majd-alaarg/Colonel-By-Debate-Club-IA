@@ -154,7 +154,8 @@ function contactForm2() {
 				.catch(error => console.error('Error!', error.message))
 		})
 
-		alert("Thank you for contact the Colonel By Debate Club. You'll hear from us shortly!");
+		alert("Thank you for contacting the Colonel By Debate Club. You'll hear from us shortly!");
+		alert("We've sent an confirmation letter to your email!");
 
 		setTimeout(pageReload, 700);
 
