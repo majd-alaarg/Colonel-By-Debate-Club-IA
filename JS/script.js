@@ -145,6 +145,7 @@ function contactForm2() {
 	} else if (userMessage == "") {
 		alert("Please enter a message so we can help you!");
 	} else {
+		//Send data to the google form
 		const scriptURL = 'https://script.google.com/macros/s/AKfycbz02WYMTa1p8EP8_sLZQFDrcImn5RtihKdz-SZB3PLe9vChxgoTjx6KKg2LsrhmJag7QA/exec'
 		const form = document.forms['contact-submit-to-google-sheet']
 
@@ -154,6 +155,8 @@ function contactForm2() {
 					method: 'POST',
 					body: new FormData(form)
 				})
+			
+				
 				.then(response => console.log('Success!', response))
 				.catch(error => console.error('Error!', error.message))
 		})
