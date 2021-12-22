@@ -41,9 +41,8 @@ function scrollFunction() {
 
 backToTopButton.addEventListener("click", smoothScrollBackToTop);
 
-// function backToTop() {
-//   window.scrollTo(0, 0);
-// }
+
+
 //The following code is the function that manages what occurs once the button is clicked with the first line setting the EventLisetner As you can see, the "constant distance" and "constant duration" are being set to manage the back-to-top actions.
 function smoothScrollBackToTop() {
 	const targetPosition = 0;
