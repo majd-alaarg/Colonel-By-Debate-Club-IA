@@ -114,3 +114,7 @@ function showSlides() {
 	setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 //Slideshow function ends here
+
+
+
+
