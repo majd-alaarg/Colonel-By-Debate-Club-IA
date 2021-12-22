@@ -156,7 +156,7 @@ function contactForm2() {
 					body: new FormData(form)
 				})
 			
-				
+				//Checking for success
 				.then(response => console.log('Success!', response))
 				.catch(error => console.error('Error!', error.message))
 		})
