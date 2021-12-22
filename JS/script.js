@@ -162,6 +162,8 @@ function contactForm2() {
 
 		//Alert user. Confirm the contact form submission.
 		alert("Thank you for contacting the Colonel By Debate Club. Check your email, you'll hear from us shortly!");
+		
+		alert("We've sent a confirmation letter to your email.");
 
 		//Reload the page to refresh fields
 		setTimeout(pageReload, 700);
