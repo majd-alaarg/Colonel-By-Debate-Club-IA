@@ -80,6 +80,8 @@ for (i = 0; i < acc.length; i++) {
 //Accordion toggle function ends//
 
 
+
+
 //The following 4 lines were found in a Stackoverflow forum where there was discussion about the easing function without using a plugin. https://stackoverflow.com/questions/5207301/jquery-easing-functions-without-using-a-plugin
 function easeInOutCubic(t, b, c, d) {
 	t /= d / 2;
