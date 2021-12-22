@@ -163,3 +163,4 @@ function contactForm2() {
 				}
 			}
 		}
+//CONTACT FORM SUBMISSION SCRIPT ENDS
