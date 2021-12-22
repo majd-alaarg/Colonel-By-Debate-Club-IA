@@ -160,7 +160,7 @@ function contactForm2() {
 				.catch(error => console.error('Error!', error.message))
 		})
 
-		//Alert user
+		//Alert user. Confirm the contact form submission.
 		alert("Thank you for contacting the Colonel By Debate Club. Check your email, you'll hear from us shortly!");
 
 		setTimeout(pageReload, 700);
