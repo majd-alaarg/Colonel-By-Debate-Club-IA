@@ -155,7 +155,6 @@ function contactForm2() {
 		})
 
 		alert("Thank you for contact the Colonel By Debate Club. You'll hear from us shortly!");
-		
 
 		setTimeout(pageReload, 700);
 
