@@ -130,7 +130,8 @@ function contactForm2() {
 	userYesStudent = String(document.getElementById("yes").value);
 	userNoStudent = String(document.getElementById("no").value);
 	userMessage = String(document.getElementById("review").value);
-	// Validation
+	
+	// Validation of user-inputted data
 	if (userName == "") {
 		alert("Please enter your name.");
 	} else if (userEmail == "") {
