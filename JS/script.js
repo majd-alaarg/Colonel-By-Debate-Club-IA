@@ -22,7 +22,6 @@ function scrollFunction() {
 		}
 	}
 
-
 	//NAV BAR RESIZE ON SCROLL
 	if (window.innerWidth > 1125) {
 		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
