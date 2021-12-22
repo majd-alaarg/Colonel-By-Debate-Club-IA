@@ -63,7 +63,6 @@ function smoothScrollBackToTop() {
 };
 
 
-
 //The following code is for the accordion section on the FAQ part of the Contact page. I followed the lesson on it using the W3 Schools link given in class. It selects the accordion class, which is the visible header of the accordion. With an event-listener for click, the panel is shown while the "active" class properties, changing the "+"-->"-", in the CSS are toggled with the JS.//
 var acc = document.getElementsByClassName("accordion");
 var i;
