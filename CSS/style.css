@@ -67,6 +67,7 @@ html {
 	}
 }
 
+
 /* The following animations are given under the class of .btnEntrance which toggled with a Java Script event listener. It sets the animation for the button entrance upon the scroll to the given heigt. @keyframe selector is used for enhanced animation. The button's exit is animated and coded under similair pretenses under the class of .btnExit.*/
 .btnEntrance {
 	animation-duration: 0.5s;
