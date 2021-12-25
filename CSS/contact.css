@@ -400,7 +400,6 @@ section div button:hover {
 .accordion:hover {
 	background-color: #ccc;
 }
-
 /*Accordion button hover state ends*/
 
 /*The ::after selector inserts the "+" symbol after the content of the "accordion" class which contains the title. It's been given a float right so that it always remain on the right*/
