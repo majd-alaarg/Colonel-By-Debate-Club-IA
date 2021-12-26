@@ -96,6 +96,16 @@
 	grid-row-start: span 1;
 }
 
+.main .gallery .img .shorten{
+	grid-column-start: span 1;
+	grid-row-start: span 2;
+}
+
+.main .gallery .img .lengthen{
+	grid-column-start: span 1;
+	grid-row-start: span 2;
+}
+
 .main .gallery .img img {
 	height: 100%;
 	width: 100%;
