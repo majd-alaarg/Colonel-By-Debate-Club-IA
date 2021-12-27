@@ -1,3 +1,7 @@
+body {
+	background-color: #fcfcfc;
+}
+
 .content {
 	margin: 2rem;
 	margin-top: 6.5rem;
@@ -140,7 +144,7 @@
 
 .blog-card .description h2 {
 	font-size: 1rem;
-	font-weight: 300;
+	font-weight: 500;
 	text-transform: uppercase;
 	color: #a2a2a2;
 	margin-top: 5px;
