@@ -120,7 +120,7 @@ function showSlides() {
 
 //CONTACT FORM SUBMISSION SCRIPT BEGINS
 function contactForm2() {
-	
+
 	//Fetch inputted data
 	userName = String(document.getElementById("name").value);
 	userEmail = String(document.getElementById("email").value);
@@ -130,7 +130,7 @@ function contactForm2() {
 	userYesStudent = String(document.getElementById("yes").value);
 	userNoStudent = String(document.getElementById("no").value);
 	userMessage = String(document.getElementById("review").value);
-	
+
 	// Validation of user-inputted data
 	if (userName == "") {
 		alert("Please enter your name.");
@@ -162,7 +162,7 @@ function contactForm2() {
 
 		//Alert user. Confirm the contact form submission.
 		alert("Thank you for contacting the Colonel By Debate Club. Check your email, you'll hear from us shortly!");
-		
+
 		alert("We've sent a confirmation letter to your email.");
 
 		//Reload the page to refresh fields
