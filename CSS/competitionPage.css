@@ -480,3 +480,12 @@
 	margin: 18px 0;
 	content: " ";
 }
+
+.eventDescription a {
+	color: #0000EE;
+}
+
+.eventDescription a:hover {
+	text-decoration: underline;
+	animation: 3s ease;
+}
