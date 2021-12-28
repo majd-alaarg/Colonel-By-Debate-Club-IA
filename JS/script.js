@@ -113,7 +113,7 @@ function showSlides() {
 	}
 	slides[slideIndex - 1].style.display = "block";
 	dots[slideIndex - 1].className += " activeSlide";
-	setTimeout(showSlides, 3000); // Change image every 3 seconds
+	setTimeout(showSlides, 2500); // Change image every 3 seconds
 }
 //Slideshow function ends here
 
