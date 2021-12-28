@@ -417,7 +417,7 @@ section div button:hover {
 
 /*The following properties are for the class of "panel" that contains the answer to the questions*/
 .panel {
-	margin: .5vw;
+	margin: 1.2vh;
 	padding: 0 20px;
 	background-color: white;
 	max-height: 0;
