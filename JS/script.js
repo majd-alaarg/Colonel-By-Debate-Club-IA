@@ -118,7 +118,7 @@ function showSlides() {
 //Slideshow function ends here
 
 
-//CONTACT FORM SUBMISSION SCRIPT BEGINS
+//CONTACT FORM VALIDATION SCRIPT BEGINS
 function contactForm2() {
 
 	//Fetch inputted data
@@ -145,10 +145,13 @@ function contactForm2() {
 	} else if (userMessage == "") {
 		alert("Please enter a message so we can help you!");
 	} else {
+			
 		//Send data to the google form
-		const scriptURL = 'https://script.google.com/macros/s/AKfycbz02WYMTa1p8EP8_sLZQFDrcImn5RtihKdz-SZB3PLe9vChxgoTjx6KKg2LsrhmJag7QA/exec'
-		const form = document.forms['contact-submit-to-google-sheet']
-
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbz02WYMTa1p8EP8_sLZQFDrcImn5RtihKdz-SZB3PLe9vChxgoTjx6KKg2LsrhmJag7QA/exec';
+		
+		//Set the contact form name as a constant
+		const form = document.forms['contact-submit-to-google-sheet'];
+		
 		form.addEventListener('submit', e => {
 			e.preventDefault()
 			fetch(scriptURL, {
