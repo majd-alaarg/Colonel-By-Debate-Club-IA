@@ -483,6 +483,7 @@
 
 .eventDescription a {
 	color: #0000EE;
+	text-decoration: underline;
 }
 
 .eventDescription a:hover {
