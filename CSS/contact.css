@@ -427,6 +427,12 @@ section div button:hover {
 
 .panel p {
 	font-size: 16px;
+	padding: 1vh;
+}
+
+.panel ul {
+	font-size: 16px;
+	padding: 1vh;
 }
 /*Panel properties end*/
 
