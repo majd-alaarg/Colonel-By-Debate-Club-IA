@@ -33,9 +33,9 @@
 }
 
 .header .text {
-	margin-top: 5.5%;
+	margin-top: 10vh;
 	padding-left: 0;
-	padding-right: 20px;
+	padding-right: 40px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -48,7 +48,14 @@
 		width: 100%;
 		padding-left: 0;
 		padding-right: 0;
+		padding-bottom: 0px;
 		width: 100%;
+	}
+
+	.header .text {
+		margin-top: 0%;
+		padding-top: 30px;
+		padding-right: 20px;
 	}
 }
 
@@ -56,7 +63,7 @@
 	color: #FFFFFF;
 	text-align: center;
 	font-size: 2rem;
-	padding-bottom: 15px;
+	padding: 2vh 0;
 	font-weight: 500;
 	font-family: 'Poppins', sans-serif;
 }
@@ -72,11 +79,25 @@
 	font-family: 'Lato', sans-serif;
 }
 
-
+#aboutusheader {
+	text-align: left;
+	padding-left: 30px;
+	padding-bottom: 0;
+	line-height: 0;
+	font-size: 28px;
+}
 
 @media only screen and (max-width: 1600px) {
 	.header .split p {
 		font-size: 16px;
+	}
+
+	#aboutusheader {
+		text-align: left;
+		padding-left: 30px;
+		padding-bottom: 0;
+		line-height: 0;
+		font-size: 22px;
 	}
 }
 
