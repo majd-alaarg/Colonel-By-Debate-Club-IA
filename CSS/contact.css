@@ -427,13 +427,10 @@ section div button:hover {
 
 .panel p {
 	font-size: 16px;
-	padding: 1vh;
+	padding: 1vh 0px;
 }
 
-.panel ul {
-	font-size: 16px;
-	padding: 1vh;
-}
+
 /*Panel properties end*/
 
 /*Accordion Properties end*/
