@@ -28,8 +28,14 @@
 .split {
 	width: 50%;
 	text-align: center;
-	padding: 30px;
+	padding: 30px 0;
 	padding-top: 120px;
+}
+
+.header .text {
+	margin-top: 5.5%;
+	padding-left: 0;
+	padding-right: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -52,7 +58,7 @@
 	font-size: 2rem;
 	padding-bottom: 15px;
 	font-weight: 500;
-		font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .header .split p {
@@ -65,6 +71,8 @@
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
 }
+
+
 
 @media only screen and (max-width: 1600px) {
 	.header .split p {
@@ -294,10 +302,11 @@ td {
 	padding-bottom: 15px;
 }
 
-.asterisk2{
+.asterisk2 {
 	color: red;
 	padding-left: 2px;
 }
+
 /*Radio, dropdown, checkbox, button properties end*/
 
 
@@ -312,7 +321,7 @@ section .container .contactForm .inputBox input:valid ~ label {
 }
 
 section .container .contactForm .inputBox textarea:focus ~ label,
-section .container .contactForm .inputBox textarea:valid ~ label{
+section .container .contactForm .inputBox textarea:valid ~ label {
 	transform: translateY(-20px);
 	font-size: 14px;
 	font-weight: 600;
@@ -358,6 +367,7 @@ section div button:hover {
 		flex-direction: column !important;
 	}
 }
+
 /*Button properties end*/
 /*Form properties end*/
 /*Form container properties end*/
@@ -400,6 +410,7 @@ section div button:hover {
 .accordion:hover {
 	background-color: #ccc;
 }
+
 /*Accordion button hover state ends*/
 
 /*The ::after selector inserts the "+" symbol after the content of the "accordion" class which contains the title. It's been given a float right so that it always remain on the right*/
@@ -413,6 +424,7 @@ section div button:hover {
 .active2:after {
 	content: "\2212";
 }
+
 /*.active properties end*/
 
 /*The following properties are for the class of "panel" that contains the answer to the questions*/
@@ -433,6 +445,7 @@ section div button:hover {
 .panel ul {
 	padding-left: 35px;
 }
+
 /*Panel properties end*/
 
 /*Accordion Properties end*/
