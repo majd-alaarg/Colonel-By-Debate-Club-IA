@@ -279,9 +279,15 @@
 	}
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
 	.eventContainer .container {
 		max-width: 1140px
+	}
+}
+
+@media (min-width: 1500px) {
+	.eventContainer .container {
+		max-width: 1300px
 	}
 }
 
