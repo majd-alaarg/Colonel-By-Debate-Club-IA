@@ -11,10 +11,19 @@ html {
 	scroll-behavior: smooth;
 	height: 100%;
 }
+
 /*Smooth scroll ends*/
 
 body {
 	display: block !important;
+}
+
+
+@media screen and (max-width: 700px) {
+	body {
+		display: unset !important;
+	}
+
 }
 
 /*Main body properties begin*/
