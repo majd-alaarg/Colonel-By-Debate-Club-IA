@@ -9,21 +9,18 @@
 /*Smooth scroll declaration*/
 html {
 	scroll-behavior: smooth;
+	height: 100%;
 }
-
 /*Smooth scroll ends*/
 
 body {
-	background-color: #fcfcfc;
+	display: block !important;
 }
-
 
 /*Main body properties begin*/
 /*Header Begins. This includes the video attributes and main hdeader container container properties. The video and the overlayed text are all styled appropraitely and cohesively.*/
 .bg-video-wrap {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 	position: relative;
@@ -34,7 +31,7 @@ body {
 
 .bg-video {
 	min-width: 100%;
-	min-height: 90vh;
+	min-height: 100vh;
 	background: url(../Videos/background.gif);
 	background-position: center center;
 	background-size: cover;
@@ -124,13 +121,6 @@ body {
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
-
-
-.main-container {
-	line-height: 1.5;
-}
-
 
 
 .main-container h1,
@@ -654,31 +644,6 @@ h2 {
 /*Ends*/
 
 
-/*Premade EconHub*/
-@font-face {
-	font-family: 'Plain-Regular';
-	src: url('../fonts/Plain-Regular.woff2') format('woff2'),
-		url('../fonts/Plain-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Plain-Light';
-	src: url('../fonts/Plain-Light.woff2') format('woff2'),
-		url('../fonts/Plain-Light.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Plain-Bold';
-	src: url('../fonts/Plain-Bold.woff2') format('woff2'),
-		url('../fonts/Plain-Bold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-}
-
 :root {
 	--primary-color: #2E86AB;
 	--secondary-color: #2E86AB;
@@ -1039,4 +1004,19 @@ h2 {
 	.main-container .footer-link li {
 		margin-left: 0;
 	}
+}
+
+.item h3 span {
+	font-family: 'Poppins', sans-serif !important;
+	font-weight: 500 !important;
+	animation: .4s ease-in-out !important;
+}
+
+.item:hover h3 span {
+	text-decoration: none !important;
+	font: black !important;
+}
+
+.item small {
+	font-family: 'Open Sans', sans-serif !important;
 }
