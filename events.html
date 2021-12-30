@@ -5,6 +5,7 @@
 	<meta charset="UTF-8" />
 	<title>CB Debate Club | Events</title>
 	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/events.css">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/fav-icon/favicon-32x32.png">
 
 	<meta name="description" content="" />
@@ -48,9 +49,18 @@
 			<li><a class="nav-item" href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
-	<div class="content" style="height: 300vh; margin-top: 100px;">
-		<iframe src="https://calendar.google.com/calendar/embed?src=74m8c5iost1l3p27jo75c02m44%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+	<!--This is the calendar container-->
+	<div style="height: 300vh; margin-top: 200px;">
+		<div class="calendarDiv" id="content">
+		<h5 style="padding-bottom: 40px;">Events Calendar</h5>
+			<!--Calendar embed code begins-->
+			<iframe id="eventsCalendar" src="https://calendar.google.com/calendar/embed?src=74m8c5iost1l3p27jo75c02m44%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0; margin: auto" width="800" height="600" frameborder="0" scrolling="no" align="center"></iframe>
+			<!--Calendar embed code ends-->
+		</div>
 	</div>
+	<!--Calendar container ends-->
+
 
 	<!--Footer section starts here. The footer, as seen below, is divided into two sections. The first one, given a class of "footer content" holds all the elements while the "copyright" div contains only the copyright.-->
 	<footer>
@@ -114,6 +124,4 @@
 	<!--Footer section ends here-->
 	<script src="js/script.js"></script>
 
-</body>
-
-</html>
+</body></html>
