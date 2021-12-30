@@ -12,7 +12,8 @@
 .main h1 {
 	position: relative;
 	height: auto;
-	width: 500px;
+	width: 30vw;
+	min-width: 400px;
 	left: 50%;
 	transform: translateX(-50%);
 	margin: 5% 0 2% 0;
@@ -100,11 +101,11 @@
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	transition: 0.4s;
+	transition: 0.3s ease-in-out;
 }
 
 .main .gallery .img {
-	transition: 0.4s;
+	transition: 0.3s ease-in-out;
 }
 
 .main .gallery .img:hover img {
