@@ -957,3 +957,9 @@ footer a {
 }
 /*End Mailchimp Signup Form*/
 /*Footer properties end*/
+
+.main-container {
+	line-height: 1.5;
+	box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
