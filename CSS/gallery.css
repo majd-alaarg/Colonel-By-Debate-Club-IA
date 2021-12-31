@@ -1,3 +1,7 @@
+body {
+	display: grid !important;
+}
+
 .main {
 	position: relative;
 	height: 100vh;
@@ -6,7 +10,7 @@
 	padding: 0;
 	font-family: sans-serif;
 	background-color: white;
-	margin-top: 140px;
+	margin-top: 70px;
 }
 
 .main h1 {
@@ -121,3 +125,16 @@
 	filter: grayscale(0);
 }
 
+@media screen and (max-width: 1100px) {
+
+
+	body {
+		display: unset !important;
+	}
+
+	.main {
+		margin-top: 160px;
+	}
+
+
+}
