@@ -132,8 +132,7 @@ body {
 /*Navigation bar starts*/
 nav {
 	display: flex;
-	height: 9vh;
-	min-height: 85px;
+	height: 90px;
 	width: 100%;
 	background: #3d0006;
 	align-items: center;
