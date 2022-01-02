@@ -112,7 +112,7 @@ body {
 	text-align: center;
 	padding-top: 5vh;
 	padding-bottom: 2vh;
-	
+
 }
 
 .collageMain a {
@@ -183,3 +183,17 @@ body {
 }
 
 
+.upcoming-slides .owl-nav {
+
+	top: -190px !important;
+
+}
+
+
+@media (max-width: 1400px) {
+	.upcoming-slides .owl-nav {
+
+		top: -175px !important;
+
+	}
+}
