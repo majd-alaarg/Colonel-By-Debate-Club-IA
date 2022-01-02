@@ -5,7 +5,7 @@
 
 /*Smooth scroll declaration*/
 html {
-	scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
 }
 /*Smooth scroll ends*/
 
