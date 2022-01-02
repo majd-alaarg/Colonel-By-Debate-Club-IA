@@ -16,8 +16,8 @@
 }
 
 /*Fixing the checkbox error*/
-input[type="checkbox"] {
-	display: block !important;
+.container input[type="checkbox"] {
+	display: inherit !important;
 }
 
 /*Main body properties begin*/
