@@ -102,6 +102,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #f5f4f4;
+	margin-bottom: 0 !Important;
 }
 
 .collageMain h5 {
