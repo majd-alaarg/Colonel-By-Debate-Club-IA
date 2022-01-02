@@ -62,6 +62,14 @@ function smoothScrollBackToTop() {
 };
 
 
+//The following 4 lines were found in a Stackoverflow forum where there was discussion about the easing function without using a plugin. https://stackoverflow.com/questions/5207301/jquery-easing-functions-without-using-a-plugin
+function easeInOutCubic(t, b, c, d) {
+	t /= d / 2;
+	if (t < 1) return c / 2 * t * t * t + b;
+	t -= 2;
+	return c / 2 * (t * t * t + 2) + b;
+};
+//BACK TO TOP BUTTON ENDS//
 
 //The following code is for the accordion section on the FAQ part of the Contact page. I followed the lesson on it using the W3 Schools link given in class. It selects the accordion class, which is the visible header of the accordion. With an event-listener for click, the panel is shown while the "active" class properties, changing the "+"-->"-", in the CSS are toggled with the JS.//
 var acc = document.getElementsByClassName("accordion");
@@ -83,15 +91,6 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-//The following 4 lines were found in a Stackoverflow forum where there was discussion about the easing function without using a plugin. https://stackoverflow.com/questions/5207301/jquery-easing-functions-without-using-a-plugin
-function easeInOutCubic(t, b, c, d) {
-	t /= d / 2;
-	if (t < 1) return c / 2 * t * t * t + b;
-	t -= 2;
-	return c / 2 * (t * t * t + 2) + b;
-};
-
-//BACK TO TOP BUTTON ENDS//
 
 //The following code is for the automatic slide show coded. First few lines get the elements of "mySlides" and the "dot". Using a setTimeout function, the timing is set.
 var slideIndex = 0;
