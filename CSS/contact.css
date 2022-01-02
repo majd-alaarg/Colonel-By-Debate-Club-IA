@@ -15,6 +15,11 @@
 	src: url(fonts/lemonmilk.otf);
 }
 
+/*Fixing the checkbox error*/
+input[type="checkbox"] {
+	display: block !important;
+}
+
 /*Main body properties begin*/
 /*Header Begins. This includes the slideshow style attributes and main hdeader container container properties.*/
 .header {
