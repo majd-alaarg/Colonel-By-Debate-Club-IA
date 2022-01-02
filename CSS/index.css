@@ -106,9 +106,10 @@ body {
 	transition: 500ms ease-in-out;
 }
 
+/*
 @keyframes mymove {
 	from {
-		/*Slide from top gradually from 0-200px in 3s*/
+		/*Slide from top gradually from 0-200px in 3s
 		opacity: 0;
 		padding-top: 0px;
 	}
@@ -818,6 +819,9 @@ h2 {
 	padding: 8em 0;
 }
 
+.main-container .section-padding2 {
+	padding: 4em 0 !important;
+}
 
 
 .main-container .hero {
@@ -1027,3 +1031,739 @@ h2 {
 .item small {
 	font-family: 'Open Sans', sans-serif !important;
 }
+
+
+
+
+
+
+
+
+/*Animated Slider Properties*/
+/* :: 1.0 Import Fonts */
+
+/*NEEDED CODE*/
+.competitionsSlider {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	scroll-behavior: smooth;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+/*Primary Text Properties Begin*/
+
+.competitionsSlider h1 {
+	font-size: 2.5rem;
+	color: #1f1f2c;
+	line-height: 1.3;
+	font-weight: 700 !Important;
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit;
+	color: #1f1f2c;
+	line-height: 1.3;
+	font-weight: 700 !Important;
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit;
+	margin-top: 0;
+	margin-bottom: .5rem
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box
+}
+
+.competitionsSlider h2 {
+	font-size: 2rem;
+	color: #1f1f2c;
+	line-height: 1.3;
+	font-weight: 700 !Important;
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit;
+	margin-top: 0;
+	margin-bottom: .5rem
+}
+
+
+.competitionsSlider h4 {
+	font-size: 1.5rem;
+	color: #1f1f2c;
+	line-height: 1.3;
+	font-weight: 700 !Important;
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit;
+	margin-top: 0;
+	margin-bottom: .5rem
+}
+
+.competitionsSlider p {
+	color: #636363;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 1rem
+}
+
+.competitionsSlider a,
+.competitionsSlider a:hover,
+.competitionsSlider a:focus {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	text-decoration: none;
+	outline: 0 solid transparent;
+	color: #1f1f2c;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+/*Primary Text Properties End*/
+
+
+/*Background Properties begin*/
+.competitionsSlider .bg-img {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../Images/upcomingEventsSectionHeader.png)
+}
+
+.competitionsSlider .bg-overlay {
+	position: relative;
+	z-index: 2;
+	background-position: center center;
+	background-size: cover;
+}
+
+.competitionsSlider .bg-overlay::after {
+	background-color: rgba(15, 6, 6, 0.75);
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+}
+
+.competitionsSlider .bg-fixed {
+	background-attachment: fixed !important;
+}
+
+/*Background Properties end*/
+
+
+/*Section heading properties begin*/
+.competitionsSlider .section-heading {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 50px;
+	text-align: center;
+	max-width: 730px;
+	margin: 0 auto 50px;
+}
+
+.competitionsSlider .section-heading h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.competitionsSlider .section-heading h2 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.competitionsSlider .section-heading h2 {
+		font-size: 24px;
+	}
+}
+
+.competitionsSlider .section-heading p {
+	font-size: 16px;
+	color: #636363;
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.competitionsSlider .section-heading p {
+		font-size: 14px;
+	}
+}
+
+.competitionsSlider .section-heading.white h2,
+.competitionsSlider .section-heading.white p {
+	color: #ffffff;
+}
+
+/*Section heading properties end*/
+
+
+/*Section padding properties begin*/
+.competitionsSlider .section-padding-0-100 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/*Section padding properties end*/
+
+
+/*Upcoming Events Area CSS*/
+.competitionsSlider .upcoming-competitions-heading {
+	position: relative;
+	z-index: 1;
+	padding: 70px 0 20px 0;
+}
+
+
+.competitionsSlider .upcoming-competitions-heading .section-heading {
+	max-width: 100%;
+}
+
+.competitionsSlider .upcoming-competitions-slides-area {
+	position: relative;
+	z-index: 1;
+	padding-top: 2vh;
+	padding-bottom: 8vh;
+}
+
+.competitionsSlider .upcoming-competitions-slides-area .col-12 {
+	padding: 0;
+}
+
+.competitionsSlider .upcoming-slides {
+	position: relative;
+	z-index: 2;
+
+}
+
+.competitionsSlider .upcoming-slides .owl-nav {
+	position: absolute;
+	top: -155px;
+	right: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	z-index: 50;
+	line-height: 1;
+}
+
+@media only screen and (max-width: 767px) {
+	.competitionsSlider .upcoming-slides .owl-nav {
+		top: -80px;
+	}
+}
+
+.competitionsSlider .upcoming-slides .owl-nav .owl-prev,
+.competitionsSlider .upcoming-slides .owl-nav .owl-next {
+	font-size: 50px;
+	color: #7c7171;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+}
+
+.competitionsSlider .upcoming-slides .owl-nav .owl-prev:hover,
+.competitionsSlider .upcoming-slides .owl-nav .owl-next:hover {
+	color: #ffffff;
+}
+
+.competitionsSlider .upcoming-slides .owl-nav .owl-prev {
+	margin-right: 30px;
+}
+
+.competitionsSlider .single-upcoming-competitions-area {
+	position: relative;
+	z-index: 1;
+	margin-top: 4.5vh;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-thumbnail {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 300px;
+	flex: 0 0 300px;
+	max-width: 300px;
+	width: 300px;
+	border-radius: 5px;
+	padding-left: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-thumbnail {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 97%;
+		width: 97%;
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-thumbnail {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 97%;
+		width: 97%;
+		margin-bottom: 50px;
+	}
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-thumbnail img {
+	border-radius: 5px;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+	width: 100%;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 calc(100% - 300px);
+	flex: 0 0 calc(100% - 300px);
+	max-width: calc(100% - 300px);
+	width: calc(100% - 300px);
+	padding-left: 50px;
+	padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+		padding-left: 15px;
+	}
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 90%;
+	flex: 0 0 90%;
+	max-width: 90%;
+	width: 70%;
+}
+
+@media only screen and (min-width: 600px) {
+	.single-slide {
+		margin-left: 5.5rem;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 60%;
+		flex: 0 0 60%;
+		max-width: 60%;
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 60%;
+		flex: 0 0 60%;
+		max-width: 60%;
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text h4 {
+	font-weight: 600;
+	margin-bottom: 15px;
+
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text a {
+	font-weight: 700;
+	color: #959595;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text p {
+	width: 80%;
+	font-size: 1em;
+}
+
+@media (min-width: 1400px) {
+	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text p {
+		font-size: 1.1em;
+	}
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text a i {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	margin-left: 3px;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text a:hover,
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text a:focus {
+	color: #d42145;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text a:hover i,
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text a:focus i {
+	padding-left: 8px;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text .competitions-meta {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 15px;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text .competitions-meta a {
+	display: inline-block;
+	font-size: 14px;
+	color: #959595;
+	font-style: italic;
+	margin-right: 15px;
+	font-weight: 400;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text .competitions-meta a i {
+	color: #d42145;
+	padding-right: 5px;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text .competitions-meta a:hover,
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text .competitions-meta a:focus {
+	color: #d42145;
+}
+
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text .competitions-meta a:hover i,
+.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text .competitions-meta a:focus i {
+	padding-left: 0;
+}
+
+
+
+/*Column and Container Properties begin*/
+.competitionsSlider .container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+@media (min-width:576px) {
+	.competitionsSlider .container {
+		max-width: 540px
+	}
+}
+
+@media (min-width:768px) {
+	.competitionsSlider .container {
+		max-width: 720px
+	}
+}
+
+@media (min-width: 992px) {
+	.competitionsSlider .container {
+		max-width: 960px
+	}
+}
+
+@media (min-width:1200px) {
+	.competitionsSlider .container {
+		max-width: 1140px
+	}
+}
+
+.competitionsSlider .row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+.competitionsSlider .col-12 {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px
+}
+
+
+.competitionsSlider .col-12 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%
+}
+
+.competitionsSlider .d-flex {
+	display: -ms-flexbox !important;
+	display: flex !important
+}
+
+.competitionsSlider .align-items-center {
+	-ms-flex-align: center !important;
+	align-items: center !important
+}
+
+.competitionsSlider .flex-wrap {
+	-ms-flex-wrap: wrap !important;
+	flex-wrap: wrap !important
+}
+
+.competitionsSlider .text-left {
+	text-align: left !important
+}
+
+#titleforEvent {
+	cursor: pointer;
+}
+
+/*Column and Container Properties end*/
+
+
+
+
+
+
+
+/*Sliding animations begin*/
+.competitionsSlider .sliding-animation,
+.competitionsSlider .sliding-animation .owl-item {
+	-webkit-tap-highlight-color: transparent;
+	position: relative
+}
+
+.competitionsSlider .sliding-animation {
+	display: none;
+	width: 100%;
+	z-index: 1
+}
+
+.competitionsSlider .sliding-animation .owl-stage {
+	position: relative;
+	-ms-touch-action: pan-Y;
+	-moz-backface-visibility: hidden
+}
+
+.competitionsSlider .sliding-animation .owl-stage:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0
+}
+
+.competitionsSlider .sliding-animation .owl-stage-outer {
+	position: relative;
+	overflow: hidden;
+	-webkit-transform: translate3d(0, 0, 0)
+}
+
+.competitionsSlider .sliding-animation .owl-item,
+.competitionsSlider .sliding-animation .owl-wrapper {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0)
+}
+
+.competitionsSlider .sliding-animation .owl-item {
+	min-height: 1px;
+	float: left;
+	-webkit-backface-visibility: hidden;
+	-webkit-touch-callout: none
+}
+
+.competitionsSlider .sliding-animation .owl-item img {
+	display: block;
+	width: 100%
+}
+
+.competitionsSlider .sliding-animation .owl-dots.disabled,
+.competitionsSlider .sliding-animation .owl-nav.disabled {
+	display: none
+}
+
+.competitionsSlider .no-js .sliding-animation,
+.competitionsSlider .sliding-animation.owl-loaded {
+	display: block
+}
+
+.competitionsSlider .sliding-animation .owl-dot,
+.competitionsSlider .sliding-animation .owl-nav .owl-next,
+.competitionsSlider .sliding-animation .owl-nav .owl-prev {
+	cursor: pointer;
+	cursor: hand;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.competitionsSlider .sliding-animation.owl-loading {
+	opacity: 0;
+	display: block
+}
+
+.competitionsSlider .sliding-animation.owl-hidden {
+	opacity: 0
+}
+
+.competitionsSlider .sliding-animation.owl-refresh .owl-item {
+	visibility: hidden
+}
+
+.competitionsSlider .sliding-animation.owl-drag .owl-item {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.competitionsSlider .sliding-animation.owl-grab {
+	cursor: move;
+	cursor: grab
+}
+
+.competitionsSlider .sliding-animation.owl-rtl {
+	direction: rtl
+}
+
+.competitionsSlider .sliding-animation.owl-rtl .owl-item {
+	float: right
+}
+
+.competitionsSlider .sliding-animation .animated {
+	animation-duration: 1s;
+	animation-fill-mode: both
+}
+
+.competitionsSlider .sliding-animation .owl-animated-in {
+	z-index: 0
+}
+
+.competitionsSlider .sliding-animation .owl-animated-out {
+	z-index: 1
+}
+
+.competitionsSlider .sliding-animation .fadeOut {
+	animation-name: fadeOut
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+.competitionsSlider .owl-height {
+	transition: height .5s ease-in-out
+}
+
+.competitionsSlider .sliding-animation .owl-item .owl-lazy {
+	opacity: 0;
+	transition: opacity .4s ease
+}
+
+.competitionsSlider .sliding-animation .owl-item img.owl-lazy {
+	transform-style: preserve-3d
+}
+
+.competitionsSlider .sliding-animation .owl-video-wrapper {
+	position: relative;
+	height: 100%;
+	background: #000
+}
+
+.competitionsSlider .sliding-animation .owl-video-play-icon {
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+	background: url(owl.video.play.png) no-repeat;
+	cursor: pointer;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	transition: transform .1s ease
+}
+
+.competitionsSlider .sliding-animation .owl-video-play-icon:hover {
+	-ms-transform: scale(1.3, 1.3);
+	transform: scale(1.3, 1.3)
+}
+
+.competitionsSlider .sliding-animation .owl-video-playing .owl-video-play-icon,
+.competitionsSlider .sliding-animation .owl-video-playing .owl-video-tn {
+	display: none
+}
+
+.competitionsSlider .sliding-animation .owl-video-tn {
+	opacity: 0;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: opacity .4s ease
+}
+
+.competitionsSlider .sliding-animation .owl-video-frame {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%
+}
+
+/*Sliding animations begin*/
