@@ -26,6 +26,7 @@ function scrollFunction() {
 	if (window.innerWidth > 1125) {
 		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 			document.getElementById("nav").style.height = "80px";
+			document.getElementsByClassName('logoName').style.fontSize = "16px"
 		} else {
 			document.getElementById("nav").style.height = "90px";
 		}
@@ -144,13 +145,13 @@ function contactForm2() {
 	} else if (userMessage == "") {
 		alert("Please enter a message so we can help you!");
 	} else {
-			
+
 		//Send data to the google form
 		const scriptURL = 'https://script.google.com/macros/s/AKfycbz02WYMTa1p8EP8_sLZQFDrcImn5RtihKdz-SZB3PLe9vChxgoTjx6KKg2LsrhmJag7QA/exec';
-		
+
 		//Set the contact form name as a constant
 		const form = document.forms['contact-submit-to-google-sheet'];
-		
+
 		form.addEventListener('submit', e => {
 			e.preventDefault()
 			fetch(scriptURL, {
@@ -176,5 +177,10 @@ function contactForm2() {
 	}
 }
 //CONTACT FORM SUBMISSION SCRIPT ENDS
+
+function scrollDown() {
+	var vh = document.documentElement.clientHeight;
+	window.scrollBy(0, vh)
+}
 
 AOS.refresh();
