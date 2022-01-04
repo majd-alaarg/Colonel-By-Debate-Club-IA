@@ -7,6 +7,7 @@
 html {
 	scroll-behavior: smooth !important;
 }
+
 /*Smooth scroll ends*/
 
 /*Back to top button style begins*/
@@ -152,8 +153,6 @@ nav {
 /*logo starts*/
 nav .logo {
 	color: #fff;
-	font-size: 35px;
-	font-weight: 600;
 	cursor: pointer;
 	width: auto;
 }
@@ -161,6 +160,21 @@ nav .logo {
 .logo a {
 	text-decoration: none;
 	color: #fff;
+}
+
+.logoName {
+	font-size: 26px;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	line-height: 1.2;
+	padding-top: 9px;
+}
+
+#logoImage {
+	height: 75px;
+	padding: 0px 0;
+	padding-right: 10px;
+	padding-top: 4px;
 }
 
 /*logo ends*/
@@ -319,6 +333,7 @@ nav ul li a {
 		border-radius: 3px;
 	}
 }
+
 /*Nav-links hover animation ends*/
 /*nav links ends*/
 
@@ -389,6 +404,15 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 1125px) {
+	nav #logoImage {
+		display: none;
+		padding-top: 0px;
+	}
+	
+	nav .logoName {
+		padding-top: 1px;
+	}
+	
 	nav .menu-btn svg {
 		display: block;
 	}
@@ -513,6 +537,7 @@ input[type="checkbox"] {
 			padding: 0;
 		}
 	}
+
 	/*Link spacing adapts to screen ends*/
 
 	/*Nav style for extra small screen starts. This handles overflow and scroll of navigation container*/
@@ -547,6 +572,7 @@ input[type="checkbox"] {
 
 	/*Link hover animation ends*/
 }
+
 /*POPUP NAV BAR FROM BURGER CODE ENDS*/
 /*Responsive navbar code ends*/
 /*Navigation bar ends*/
@@ -759,6 +785,7 @@ footer a {
 	background: grey;
 	color: white;
 }
+
 /*Hover Animation Ends*/
 
 #mc_embed_signup .small-meta {
@@ -954,7 +981,8 @@ footer a {
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
 	border: 2px solid #e85c41;
 }
+
 /*End Mailchimp Signup Form*/
 /*Footer properties end*/
 
-
+/*Anchor fix*/
