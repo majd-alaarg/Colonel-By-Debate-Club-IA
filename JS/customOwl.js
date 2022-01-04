@@ -1,3 +1,4 @@
+//OWL SLIDESHOW SCRIPT FOR HOMEPAGE
 $(function () {
 	// PROJECT SLIDE
 	$('#project-slide').owlCarousel({
@@ -19,4 +20,19 @@ $(function () {
 	});
 
 });
+
+
+//SLIDESHOW SCRIPT FOR EDUCATION PAGE
+var slideEl = $(".slide--parent");
+
+slideEl.flickity({
+	accessibility: true,
+	imagesLoaded: true,
+	wrapAround: true,
+	autoPlay: 5000,
+	pauseAutoPlayOnHover: false
+});
+
+
+
 AOS.refresh();
