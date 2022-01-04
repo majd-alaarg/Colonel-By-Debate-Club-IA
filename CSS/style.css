@@ -164,8 +164,8 @@ nav .logo {
 
 .logoName {
 	font-size: 26px;
-	font-family: 'Open Sans';
-	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 	line-height: 1.2;
 	padding-top: 9px;
 }
@@ -984,5 +984,3 @@ footer a {
 
 /*End Mailchimp Signup Form*/
 /*Footer properties end*/
-
-/*Anchor fix*/
