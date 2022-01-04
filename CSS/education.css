@@ -295,7 +295,7 @@ body {
 /*Slideshow properties begin*/
 .slideshowSection {
 	font-family: "Fira Sans", sans-serif;
-	margin-top: 3em;
+	margin: 3em 0 4em 0;
 }
 
 .slideshowSection .slide--parent {
@@ -356,6 +356,7 @@ body {
 
 .slideshowSection .is-item.has--img {
 	width: 40%;
+	
 }
 
 .slideshowSection .the-img {
@@ -366,6 +367,8 @@ body {
 
 .slideshowSection .the-img img {
 	width: 100%;
+	max-height: 80vh;
+	object-fit: cover;
 }
 
 .slideshowSection .is-item--inner {
@@ -394,7 +397,7 @@ body {
 	position: relative;
 	opacity: 0;
 	transition: all 400ms ease;
-	margin: 16px 0;
+	margin: 12px 0;
 }
 
 .slideshowSection h1 {
