@@ -29,7 +29,7 @@ slideEl.flickity({
 	accessibility: true,
 	imagesLoaded: true,
 	wrapAround: true,
-	autoPlay: 5000,
+	autoPlay: false,
 	pauseAutoPlayOnHover: true,
 });
 
