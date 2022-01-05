@@ -208,29 +208,35 @@ body {
 }
 
 .gallery .thumbnail h4 {
-	margin-top: 5px;
+	font-size: 18px;
+	margin-top: 10px;
 	margin-bottom: 5px;
 	color: #52BAD5;
 	text-align: left;
 	padding-left: 20px;
 	padding-right: 20px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .gallery .thumbnail p {
 	margin: 0;
-	color: #B3B3B3;
+	color: black;
 	text-align: left;
 	padding-left: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 }
 
 
 .gallery .thumbnail .tag {
 	color: #5D5E5D;
-	padding-bottom: 4px;
-	padding-top: 4px;
+	padding-bottom: 12px;
+	padding-top: 2px;
 	text-align: left;
 	padding-left: 20px;
 	padding-right: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 }
 
 /* Small Desktops */
@@ -562,7 +568,7 @@ body {
 
 /*Slideshow properties begin*/
 .slideshowSection {
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	margin: 3em 0 4em 0;
 }
 
@@ -577,9 +583,10 @@ body {
 }
 
 .slideshowSection h1 {
-	letter-spacing: 10px;
+	font-family: "Fira Sans", sans-serif;
 	color: #343434;
 	margin: 0;
+	margin-bottom: 10px;
 }
 
 .slideshowSection small {
