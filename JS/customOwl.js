@@ -30,7 +30,7 @@ slideEl.flickity({
 	imagesLoaded: true,
 	wrapAround: true,
 	autoPlay: 5000,
-	pauseAutoPlayOnHover: false
+	pauseAutoPlayOnHover: true,
 });
 
 
