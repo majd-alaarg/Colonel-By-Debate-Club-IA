@@ -161,7 +161,7 @@ body {
 	color: #0AA696;
 	display: inline-block;
 	position: relative;
-	text-decoration: 5px underline;
+	text-decoration: 2px underline;
 }
 
 .blog-card .description .read-more a:after {
