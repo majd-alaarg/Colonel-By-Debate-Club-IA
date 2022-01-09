@@ -4,8 +4,10 @@ $(function () {
 	$('#project-slide').owlCarousel({
 		loop: true,
 		center: true,
-		autoplayTimeout: 4000,
+		autoplayTimeout: 5000,
 		autoplayHoverPause: false,
+		autoplaySpeed: 2000,
+		easeInOutBounce: true,
 		autoplay: true,
 		margin: 30,
 		responsiveClass: true,
