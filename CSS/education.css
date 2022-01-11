@@ -13,24 +13,27 @@ body {
 /*Main body properties begin*/
 /*Header Begins. This includes the slideshow style attributes and main hdeader container container properties.*/
 .header {
-	background: url(../images/background.png);
+	background: url(../images/educationHeaderBackground.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(../images/educationHeaderBackground.jpg);
+	background-position: 0% 50%;
 	padding-bottom: 10px;
-	min-height: 300px;
+	min-height: 60vh;
 	display: flex;
 	max-width: 100%;
+	
 }
 
 .split {
-	width: 50%;
 	text-align: center;
 	padding: 30px 0;
 	padding-top: 120px;
 }
 
 .header .text {
-	margin-top: 10vh;
+	width: 50%;
+	margin-top: 1vh;
 	padding-left: 0;
-	padding-right: 5vh;
+	padding-left: 10vh;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -56,9 +59,10 @@ body {
 
 .header .split h3 {
 	color: #FFFFFF;
-	text-align: center;
+	text-align: left;
 	font-size: 2rem;
-	padding: 2vh 0;
+	padding: 2vh 0 0 0;
+	margin-left: 2rem;
 	font-weight: 500;
 	font-family: 'Poppins', sans-serif;
 }
@@ -67,11 +71,11 @@ body {
 	text-align: left;
 	line-height: 1.5;
 	margin: 2rem;
-	margin-top: 5%;
+	margin-top: 2%;
 	color: #FFFFFF;
-	font-size: 1.05vw;
+	font-size: 1vw;
 	font-weight: 300;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #aboutusheader {
@@ -98,6 +102,10 @@ body {
 
 /*Slideshow properties begin here*/
 /* Slideshow container */
+.slideshow {
+	width: 50%;
+}
+
 .slideshow-container {
 	max-width: 1000px;
 	position: relative;
@@ -280,6 +288,7 @@ body {
 		width: 90%;
 	}
 }
+
 /*Youtube Gallery Section Properties Ends*/
 
 
@@ -785,3 +794,52 @@ body {
 /*Spacing fix*/
 
 /*Slideshow properties end*/
+
+.slideshow-container .row2 {
+	display: flex !important;
+	align-items: center !important;
+	flex-direction: row !important;
+	width: 100%;
+	margin: auto;
+}
+
+.slideshow-container .col2 {
+	flex-basis: 100% !important;
+}
+
+
+.slideshow-container p {
+	color: #fff;
+	font-size: 14px;
+}
+
+.slideshow-container .card {
+	width: 40%;
+	height: 400px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 12px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 30px;
+	background-position: center;
+	background-size: cover;
+	transition: 1s;
+}
+
+.slideshow-container .card1 {
+	background-image: url("https://cdn.britannica.com/25/99525-050-DCC15F00/Chamber-House-of-Commons-Houses-Parliament-London.jpg");
+}
+
+.slideshow-container .card2 {
+	background-image: url("https://cdn.britannica.com/25/99525-050-DCC15F00/Chamber-House-of-Commons-Houses-Parliament-London.jpg");
+}
+
+.slideshow-container .card:hover {
+	transform: translateY(-10px);
+}
+
+.slideshow-container h5 {
+	color: #fff;
+	text-shadow: 0 0 5px #999;
+}
