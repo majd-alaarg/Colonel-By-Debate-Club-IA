@@ -417,7 +417,7 @@
 									</h3>
 								</div>
 							</div>
-							
+
 							<div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
 								<img src="images/educationCarouselSlide2.png" class="img-fluid" alt="project image">
 
@@ -568,6 +568,27 @@
 	<script src="js/jquery.min.js"></script>
 
 	<!--AOS Animation Script-->
+	<script>
+		function isElementInViewport(el) {
+			if (typeof jQuery === "function" && el instanceof jQuery) {
+				el = el[0];
+			}
+			var position = el.getBoundingClientRect();
+			if (position.top >= 0 && position.bottom <= window.innerHeight) {
+				return true;
+			}
+			if (position.top < window.innerHeight && position.bottom >= 0) {
+				return true;
+			}
+			return false;
+		}
+		$("[data-aos]").each(function() {
+			if (isElementInViewport($(this))) {
+				$(this).removeAttr("data-aos");
+			}
+		});
+
+	</script>
 	<script src='https://unpkg.com/aos@next/dist/aos.js'></script>
 	<script>
 		// AOS ANIMATION
@@ -575,6 +596,7 @@
 			disable: 'mobile',
 			duration: 800,
 		});
+
 	</script>
 
 	<!--Owl slider script-->
@@ -583,4 +605,6 @@
 	<!--Competitions slider JS-->
 	<script src="js/additionalPlugins.js"></script>
 	<script src="JS/active.js"></script>
-</body></html>
+</body>
+
+</html>
