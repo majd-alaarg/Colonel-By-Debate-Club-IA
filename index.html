@@ -569,24 +569,7 @@
 
 	<!--AOS Animation Script-->
 	<script>
-		function isElementInViewport(el) {
-			if (typeof jQuery === "function" && el instanceof jQuery) {
-				el = el[0];
-			}
-			var position = el.getBoundingClientRect();
-			if (position.top >= 0 && position.bottom <= window.innerHeight) {
-				return true;
-			}
-			if (position.top < window.innerHeight && position.bottom >= 0) {
-				return true;
-			}
-			return false;
-		}
-		$("[data-aos]").each(function() {
-			if (isElementInViewport($(this))) {
-				$(this).removeAttr("data-aos");
-			}
-		});
+		
 
 	</script>
 	<script src='https://unpkg.com/aos@next/dist/aos.js'></script>
