@@ -74,6 +74,7 @@ body {
 	padding-top: 100px;
 	font-size: 5vw;
 	animation: mymove 2s;
+	animation-delay: 2s;
 	/*Gives animation name and duration*/
 }
 
