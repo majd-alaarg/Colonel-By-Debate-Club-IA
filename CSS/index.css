@@ -82,9 +82,10 @@ body {
 	width: 100%;
 }
 
+/*
 @keyframes mymove {
 	from {
-		/*Slide from top gradually from 0-200px in 3s*/
+		Slide from top gradually from 0-200px in 3s
 		opacity: 0;
 		padding-top: 0px;
 	}
@@ -94,6 +95,7 @@ body {
 		padding-top: 200;
 	}
 }
+*/
 
 .vid-header a,
 .vid-header button {
