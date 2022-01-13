@@ -75,6 +75,8 @@ body {
 	font-size: 5vw;
 	animation: mymove 2s;
 	animation-delay: 2s;
+	visibility: hidden;
+	animation-fill-mode: both;
 	/*Gives animation name and duration*/
 }
 
@@ -82,20 +84,19 @@ body {
 	width: 100%;
 }
 
-/*
 @keyframes mymove {
-	from {
-		Slide from top gradually from 0-200px in 3s
+	0% {
+		/*Slide from top gradually from 0-200px in 3s*/
 		opacity: 0;
 		padding-top: 0px;
 	}
 
-	to {
+	100% {
 		opacity: 1;
 		padding-top: 200;
+		visibility: visible;
 	}
 }
-*/
 
 .vid-header a,
 .vid-header button {
