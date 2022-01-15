@@ -11,6 +11,7 @@ html {
 	scroll-behavior: smooth !important;
 	height: 100%;
 }
+
 /*Smooth scroll ends*/
 
 body {
@@ -18,7 +19,7 @@ body {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
 	body {
 		display: unset !important;
 	}
@@ -120,6 +121,28 @@ body {
 .bg-video-wrap a:hover {
 	background: #009090;
 	transition: 500ms ease-in-out;
+}
+
+@media (max-width: 1000px) {
+	.bg-video-wrap h1 {
+		padding-top: 25vh;
+	}
+	.bg-video-wrap a {
+		padding: 15px 30px;
+		font-size: 14px;
+		width: 200px;
+		background: ;
+		border-radius: 5px;
+		background: #010e36;
+		min-height: 100px;
+		transition: 500ms ease-in-out;
+	}
+
+	.vid-header br {
+		display: block;
+		content: "";
+		border-bottom: 40px solid transparent;
+	}
 }
 
 /*
