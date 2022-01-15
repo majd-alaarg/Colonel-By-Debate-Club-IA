@@ -183,7 +183,7 @@ article.card {
 	display: block;
 	margin-top: 50px;
 	width: 350px;
-	height: 250px;
+	height: 270px;
 
 	border-radius: 3px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -198,10 +198,20 @@ article.card {
 
 article.card .thumb {
 	width: auto;
-	height: 150px;
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png") no-repeat center;
+	height: 170px;
+	
 	background-size: cover;
 	border-radius: 3px;
+}
+
+article.card .meetingCard{
+	background: url(../Images/meetingDetailCard.png) no-repeat center ;
+	background-position: top;
+}
+
+article.card .teacherCard{
+	background: url(../Images/teacherContactCard.png) no-repeat center;
+	background-position: 50% 70%;
 }
 
 article.card .infos {
@@ -230,8 +240,8 @@ article.card .infos .flag {
 	right: 0;
 	transform: translateY(-50%);
 	width: 35px;
-	height: 23px;
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.png") no-repeat top right;
+	height: 40px;
+	background: url(../Images/crest.png) no-repeat top right;
 	background-size: 100% auto;
 	display: inline-block;
 }
@@ -256,11 +266,18 @@ article.card .infos .seats {
 
 article.card .infos .txt {
 	font-family: "Merriweather", sans-serif;
-	line-height: 2;
+	padding-top: 10px;
+	line-height: 1.5;
 	font-size: 0.95rem;
 	color: rgba(21, 37, 54, 0.7);
 	opacity: 0;
 	transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+@media (min-width: 1650px) {
+	article.card .infos .txt {
+		padding-top: 20px;
+	}
 }
 
 article.card .infos .details {
@@ -281,7 +298,7 @@ article.card .infos .details {
 }
 
 article.card:hover .infos {
-	transform: translateY(-160px);
+	transform: translateY(-170px);
 }
 
 .calendarInfo a[href],
@@ -325,7 +342,7 @@ article.card:hover .infos .details {
 @media screen and (max-width: 1200px) {
 	.main2container {
 		flex-direction: column;
-		padding: 150px 0vw;
+		padding: 150px 0vw 50px 0;
 
 	}
 
@@ -345,8 +362,8 @@ article.card:hover .infos .details {
 		width: 90%;
 		padding-top: 5vh;
 		padding-bottom: 5vh;
-		margin-left: auto;
-		margin-right: auto;
+		margin-right: 4vw;
+		margin-left: 4vw !important;
 		display: flex;
 		flex-direction: row;
 		margin: auto;
@@ -354,6 +371,13 @@ article.card:hover .infos .details {
 		align-content: center;
 	}
 
+	article.card {
+		
+		width: 40vw;
+		height: 270px;
+margin-right: 3vw;
+		margin-bottom: 0;
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -375,7 +399,7 @@ article.card:hover .infos .details {
 		padding-bottom: 5vh;
 		padding-right: 0px;
 		padding-left: 0px;
-		margin-left: 3.2vw !important;
+		margin-left: 5.5vw !important;
 		margin-right: auto;
 		flex-direction: column;
 		margin: auto;
@@ -383,7 +407,8 @@ article.card:hover .infos .details {
 	}
 
 	article.card {
-		width: 90vw;
-		margin-bottom: 0''
+		width: 70vw;
+		margin-bottom: 0;
 	}
+
 }
