@@ -340,7 +340,7 @@
 	width: 70%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 	.single-slide {
 		margin-left: 5.5rem;
 	}
@@ -349,20 +349,20 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text {
 		-webkit-box-flex: 0;
-		-ms-flex: 0 0 60%;
-		flex: 0 0 60%;
-		max-width: 60%;
-		width: 60%;
+		-ms-flex: 0 0 90%;
+		flex: 0 0 90%;
+		max-width: 90%;
+		width: 100%;
 	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.competitionsSlider .single-upcoming-competitions-area .upcoming-competitions-content .competitions-text {
 		-webkit-box-flex: 0;
-		-ms-flex: 0 0 60%;
-		flex: 0 0 60%;
-		max-width: 60%;
-		width: 60%;
+		-ms-flex: 0 0 90%;
+		flex: 0 0 90%;
+		max-width: 90%;
+		width: 100%;
 	}
 }
 
@@ -473,9 +473,15 @@
 	}
 }
 
+@media (min-width:1100px) {
+	.competitionsSlider .container {
+		max-width: 1060px;
+	}
+}
+
 @media (min-width:1200px) {
 	.competitionsSlider .container {
-		max-width: 1140px
+		max-width: 1140px;
 	}
 }
 
