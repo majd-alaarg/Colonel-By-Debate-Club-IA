@@ -587,6 +587,7 @@ footer {
 	bottom: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
+	min-height: 360;
 }
 
 footer a {
