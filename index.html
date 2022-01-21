@@ -569,23 +569,21 @@
 
 	<!--AOS Animation Script-->
 	<script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+	<script>
+		// AOS ANIMATION
+		AOS.init({
+			disable: 'mobile',
+			duration: 800,
+		});
+
+	</script>
+
 	<!--Owl slider script-->
 	<script src="js/customOwl.js"></script>
 
 	<!--Competitions slider JS-->
 	<script src="js/additionalPlugins.js"></script>
 	<script src="JS/active.js"></script>
-
-	<script>
-		// AOS ANIMATION
-		setTimeout(function() {
-			AOS.init({
-				disable: 'mobile',
-				duration: 800,
-			});
-		}, 1000);
-
-	</script>
 </body>
 
 </html>
